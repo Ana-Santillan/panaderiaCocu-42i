@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <nav class="navbar navbar-expand-lg bg-primary-subtle navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
                     <img src="../img/cocu_logo-450.png" alt="Logo panaderia cocu" width="90px">
@@ -35,7 +35,7 @@
                             <a class="nav-link" href="historia.html">Historia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-linkactive" href="productos.html">Productos</a>
+                            <a class="nav-link active" href="productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contactos.html">Contacto</a>
@@ -63,12 +63,13 @@
             </aside>
             <aside class="col-md-4 col-lg-3 mb-3">
                 <article class="card">
-                    <img src="../img/productos/Croissant_00018_portfolio1.jpg" class="card-img-top" alt="Croissant">
+                    <img src="../img/productos/Panes-negros-corte_00170_portfolio1.jpg" class="card-img-top" alt="Croissant">
                     <div class="card-body">
                         <h5 class="card-title">Croissant</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
-                        <a href="error404.html" class="btn btn-primary">Ver mas</a>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productoPan">Ver
+                                mas</button>
                     </div>
                 </article>
             </aside>
@@ -195,8 +196,33 @@
             </div>
         </section>
 
+        <section>
+            <div class="modal fade" id="productoPan" tabindex="-1" aria-labelledby="modalMedialunaLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title fs-5" id="modalMedialunaLabel">Medialunas</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../img/productos/Panes-negros-corte_00170_portfolio1.jpg" alt="Medialuna"
+                                class="w-100 mb-3">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, tempora illo! Eum
+                                culpa quisquam eaque fugiat autem iusto mollitia nam dicta magnam veniam ducimus, atque
+                                quos? Vitae, id corporis perferendis quisquam aliquam rem optio maiores non dolore nisi
+                                illo omnis.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
-    <footer class="bg-dark text-secondary py-4">
+    <footer class="bg-primary-subtle text-secondary py-4">
         <section class="container">
             <div class="row">
                 <aside class="col-md-4 text-center">
